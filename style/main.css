@@ -1,0 +1,102 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body{
+    background: var(--preta);
+    font-family: Arial, 'Times New Roman', Times, serif;
+    color:white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .netflix-logo{
+    padding: 18px 0;
+    height: 4.5rem;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*série principal*/
+
+.serie-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('../img/capa-dark.jpg');
+
+    height: 355px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serie-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.serie-principal .dark-logo{
+    height: 50px;
+    margin-top: 15%;
+}
+
+.botao{
+    background-color:rgba(0,0,0,.50);
+    border: none;
+    color:white;
+    
+    padding: 15px 30px;
+    margin-right: 5px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.serie-principal .container{
+    width: 450px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;  
+}
+
